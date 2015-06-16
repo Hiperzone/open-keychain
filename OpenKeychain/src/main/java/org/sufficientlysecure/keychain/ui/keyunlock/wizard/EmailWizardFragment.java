@@ -81,6 +81,12 @@ public class EmailWizardFragment extends WizardFragment{
         return view;
     }
 
+    @Override
+    public boolean onNextClicked() {
+        mWizardFragmentListener.setEmail(mCreateKeyEmail.getText());
+        mWizardFragmentListener.setAdditionalEmails(getAdditionalEmails());
+        return true;
+    }
     /**
      * Checks if a given email is valid
      *
