@@ -39,4 +39,11 @@ public class WizardFragment extends Fragment implements CreateKeyWizardListener 
             mWizardFragmentListener.onWizardFragmentVisible(this);
         }
     }
+
+    /**
+     * Helper method to add a new email to the email wizard fragment.
+     */
+    public void onRequestAddEmail(String email) {
+
+    }
 }
